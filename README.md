@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My To-Do App with 3D Twist
 
-## Getting Started
+A modern to-do list app built with Next.js, featuring a creative 3D widget powered by React Three Fiber. The app includes light and dark themes, a sidebar for project and task management, and a dynamic 3D cube that reflects task progress.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js (App Router)**: Fast and modern React framework.
+- **Tailwind CSS**: For responsive and customizable UI.
+- **React Context + useReducer**: Efficient state management.
+- **Theme Toggle**: Switch between light and dark modes.
+- **Sidebar Navigation**: Organize tasks by projects and categories.
+- **3D Widget**: A rotating cube that changes color based on task completion (using @react-three/fiber and @react-three/drei).
+- **Local Storage**: Persist tasks locally in the browser — no backend required.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/my-todo-3d.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd my-todo-3d
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and go to `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+Deploy to Vercel by linking this GitHub repository.
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- All data is stored locally in the browser (`localStorage`) — no backend required.
+- The 3D widget is purely client-side.
