@@ -9,14 +9,12 @@ export default function Page() {
 
   return (
     <div className="flex items-start h-full">
-      {/* Sidebar on the left */}
-      <div className="w-64 h-full">
+      <div className="w-64 h-full max-lg:hidden">
         <Sidebar />
       </div>
 
-      {/* Main content on the right */}
-      <div className="ml-10">
-        {/* Top bar */}
+      
+      <div className="lg:ml-10">
         <div className="flex items-center mb-6">
           <div>
             <h1 className="text-2xl font-semibold">Welcome back, Vincent 👋</h1>

@@ -10,7 +10,6 @@ function ProgressMesh({ ratio }: { ratio: number }) {
     if (meshRef.current) meshRef.current.rotation.y += delta * 0.3;
   });
 
-  // main rail + filled bar rendered as two boxes
   return (
     <group>
       <mesh position={[0, 0, 0]} rotation={[0, 0, 0]} >

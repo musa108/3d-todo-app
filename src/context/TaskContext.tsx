@@ -6,7 +6,7 @@ export type Task = {
   id: string;
   title: string;
   project?: string;
-  progress?: number; // 0-100
+  progress?: number; 
   due?: string;
   status: TaskStatus;
   createdAt: string;
@@ -48,7 +48,6 @@ const TaskContext = createContext<{ state: State; dispatch: React.Dispatch<Actio
 export function TaskProvider({ children }: { children: React.ReactNode }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // init with dummy tasks on mount
   useEffect(() => {
     const sample: Task[] = [
       { id: "t1", title: "Design new ui presentation", project: "Dribbble marketing", progress: 70, due: "24 Aug 2022", status: "todo", createdAt: new Date().toISOString() },
