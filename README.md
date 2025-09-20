@@ -20,7 +20,7 @@ A modern to-do list app built with Next.js, featuring a creative 3D widget power
    ```
 2. Navigate to the project directory:
    ```bash
-   cd my-todo-3d
+   cd 3d-todo-app
    ```
 3. Install dependencies:
    ```bash
