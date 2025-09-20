@@ -16,7 +16,7 @@ A modern to-do list app built with Next.js, featuring a creative 3D widget power
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-todo-3d.git
+   git clone https://github.com/musa108/3d-todo-app
    ```
 2. Navigate to the project directory:
    ```bash
